@@ -667,6 +667,7 @@ body{
 .pr_img{
     width: 298px;
     height: 296px;
+    
 }
 
 .pr-container {
@@ -714,5 +715,5 @@ body{
 }
 .podr a{
     text-decoration: none;
-    color: #000000;
+    color: #000000;  
 }
