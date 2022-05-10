@@ -521,6 +521,10 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.row2 {
+    margin-top: 17px;
+}
+
 .logo-img {
     width: 35px;
     height: 35px;
@@ -536,7 +540,7 @@ body{
     line-height: 1px;
     margin-top: 1px;
     color: #000000;
-    margin-bottom: 24px;
+    margin-bottom: 57px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
@@ -548,6 +552,7 @@ body{
     /* width: 2596px; */
     height: 859px;
     display: flex;
+
 }
 .abon_card{
     background: radial-gradient(302.67% 517.91% at 92% 84.92%, rgba(0, 0, 0, 0.146) 0%, rgba(239, 239, 239, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -557,6 +562,24 @@ body{
     border-radius: 15px;
     /* align-self: stretch; */
     flex-basis: 430px 799px;
+    margin: 10px;
+    width: 500px;
+    display: flex;
+}
+
+.abon-container {
+    margin: 0 auto;
+    display: flex;
+}
+
+.textt {
+    margin: auto;
+}
+
+.abon_info {
+    margin: auto 0;
+    width: 100%;
+    height: 50px;
 }
 
 .info_title{
@@ -596,8 +619,8 @@ body{
 .trainers_title{
     font-weight: 700;
     font-size: 80px;
-    line-height: 200px;
-    /* margin-top: 1px; */
+    line-height: 81px;
+    margin-top: 51px;
     color: #000000;
     margin-bottom: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -606,7 +629,14 @@ body{
 }
 .trainers_card{
     display: flex;
-    /* max-width: 1000px; */
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainers_card * {
+    margin: 35px 79px;
 }
 
 .podr p{
@@ -626,14 +656,30 @@ body{
 }
 .first_pr{
     display: flex;
+    width: 100%;
+    vertical-align: middle;
 }
 .second_pr{
     display: flex;
+    width: 100%;
+    vertical-align: middle;
 }
 .pr_img{
     width: 298px;
     height: 296px;
-    margin: 100px;
+}
+
+.pr-container {
+    margin: 48px 48px;
+}
+
+.pr-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    margin: auto 0;
+    max-width: 808px;
+    margin-left: 66px;
 }
 
 .kontacts{
