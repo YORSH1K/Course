@@ -14,7 +14,7 @@
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="wrapper">
             <div class="header_wrapper">
 
@@ -41,7 +41,7 @@
                 <div class="wrapper">
                     <h1 class="intro__title">ALFA ROSH</h1>
                     <p class="intro__subtitle">Запишитесь на пробную тренировку для дальнейшего понимания о проекте.</p>
-                    <button type="submit" class="sub">Попробывать бесплатно</button>
+                    <a href="#popup"><button type="submit" class="sub">Попробывать бесплатно</button></a>
                     <div class="achive">
     
                         <div class="col1">
@@ -186,6 +186,68 @@
             </div>
         </div>
     </section>  
+
+    <!--Форма-->
+    <div class="popup" id="popup">
+        <div class="popup__body">
+            <div class="card">
+                <a href="#header" class="popup__close">X</a>
+                <!-- -----------------------------------Лого------------------------------------------ -->
+                        <div class="logo">
+                            <h1>ALFA ROSH</h1>
+                            <p><strong>№1</strong> в Татарстане.</p>
+                        </div>
+                <!-- -----------------------------------Лого------------------------------------------ -->
+                
+                    <!-- -----------------------------------Выбор------------------------------------------ -->
+                    <div class="network">
+                        <form>
+                            <fieldset>
+                                <legend><h1>Абонемент на:</h1></legend>
+                                <div>
+                                    <input type="radio" id="contactChoice1"
+                                    name="Times" value="12_мес">
+                                    <label for="contactChoice1">12 мес.</label>
+                            
+                                    <input type="radio" id="contactChoice2"
+                                    name="Times" value="6_мес">
+                                    <label for="contactChoice2">6 мес.</label>
+                            
+                                    <input type="radio" id="contactChoice3"
+                                    name="Times" value="1_мес">
+                                    <label for="contactChoice3">1 мес.</label>
+                    
+                                    <input type="radio" id="contactChoice3"
+                                    name="Times" value="free" checked>
+                                    <label for="contactChoice3">Попробывать бесплатно</label>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- -----------------------------------Выбор------------------------------------------ -->
+                    <!-- -----------------------------------Форум------------------------------------------ -->
+                            <div class="forum">
+                                <H1>Оставить данные</H1>
+                                <form action="check.php" method="post">
+                                    <div class="forum-group">
+                                        <label for="name">Ваше имя:</label>
+                                        <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+                                    </div>
+                                    <div class="forum-group">
+                                        <label for="Email">Ваш Email</label>
+                                        <input type="Email" id="Email" name="Email" placeholder="Введите Email">
+                                    </div>
+                                    <div class="forum-group">
+                                        <label for="Phone">Ваш номер телефона</label>
+                                        <input type="Phone" id="Email" name="Phone" placeholder="Введите номер телефона">
+                                    </div>
+                                    <input class="btn" type="submit" value="Отправить">
+                                </form>
+                            </div>
+            </div>
+        </div>
+    </div>
+             <!-- -----------------------------------Форум------------------------------------------ -->
 
     <script src="js/main.js"></script>
 </body>
