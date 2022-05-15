@@ -882,18 +882,17 @@ body{
 	margin: 20px;
 }
 
-div:first-of-type {
-	/* display: flex; */
+ /* div:first-of-type {
 	align-items: flex-start; 
 	margin-bottom: 5px;
-  }
+  }  */
   
   label {
 	margin-right: 15px;
 	line-height: 32px;
   }
   
-  input {
+  #contactChoice1, #contactChoice2, #contactChoice3 {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
