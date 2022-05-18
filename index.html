@@ -70,7 +70,7 @@
                                 <p>Клиентов, уже тренируются у нас!</p>
                             </div>
                         </div>
-    
+                        
                     </div>
                 </div>
                 <div class="intro__logo"><img src="/img/running-min.png" alt=""></div>
@@ -86,25 +86,18 @@
                 Абонемент
             </h1>
             <div class="abon_cardss">
-
                 <div class="abon-container">
                     <div class="abon_card">
-
-                            <h2 class="textt"> 12 мес. профи</h2>
-                            <p class="texttt">12 месяцев тренировки с функцией "Пауза" и с наличием полотенцев для сауны.</p>
-
+                        <h2 class="textt"> 12 мес. профи</h2>
+                        <p class="texttt">12 месяцев тренировки с функцией "Пауза" и с наличием полотенцев для сауны.</p>
                     </div>
                     <div class="abon_card">
-
-                            <h2 class="textt"> 6 мес. бывалый</h2>
-                            <p class="texttt">6 месяцев тренировки с ффункцией "Пауза"</p>
-
+                        <h2 class="textt"> 6 мес. бывалый</h2>
+                        <p class="texttt">6 месяцев тренировки с ффункцией "Пауза"</p>
                     </div>
                     <div class="abon_card">
-
-                            <h2 class="textt"> 1 мес. новичок</h2>
-                            <p class="texttt">1 месяц тренировки</p>
-
+                        <h2 class="textt"> 1 мес. новичок</h2>
+                        <p class="texttt">1 месяц тренировки</p>
                     </div>
                 </div>
             </div>
@@ -161,10 +154,7 @@
                     <p class="pr-text">Приведи друга и получи абонемент на неделю в подарок.</p>
                 </div>
             </div>
-        
-
             <div class="podr"><p>Подробности по т. <a href="tel:+78005553535">  8(800)555-35-35</a></p></div>
-
         </div>
     </section>  
 
@@ -199,55 +189,44 @@
                         </div>
                 <!-- -----------------------------------Лого------------------------------------------ -->
                 
-                    <!-- -----------------------------------Выбор------------------------------------------ -->
-                    <div class="network">
-                        <form>
-                            <fieldset>
-                                <legend><h1>Абонемент на:</h1></legend>
-                                <div>
-                                    <input type="radio" id="contactChoice1"
-                                    name="Times" value="12_мес">
-                                    <label for="contactChoice1">12 мес.</label>
-                            
-                                    <input type="radio" id="contactChoice2"
-                                    name="Times" value="6_мес">
-                                    <label for="contactChoice2">6 мес.</label>
-                            
-                                    <input type="radio" id="contactChoice3"
-                                    name="Times" value="1_мес">
-                                    <label for="contactChoice3">1 мес.</label>
-                    
-                                    <input type="radio" id="contactChoice3"
-                                    name="Times" value="free" checked>
-                                    <label for="contactChoice3">Попробывать бесплатно</label>
-                                </div>
-                            </fieldset>
-                        </form>
+                <!-- -----------------------------------Выбор------------------------------------------ -->
+                <div class="network">
+                    <div class="container">
+                        <legend><h1>Абонемент на:</h1></legend>
+                        <div class="select">
+                            <select>
+                                <option value="1">Попробывать бесплатно</option>
+                                <option value="2">12 мес.</option>
+                                <option value="3">6 мес.</option>
+                                <option value="4">1 мес.</option>
+                            </select>
+                        </div>
                     </div>
-                    <!-- -----------------------------------Выбор------------------------------------------ -->
-                    <!-- -----------------------------------Форум------------------------------------------ -->
-                            <div class="forum">
-                                <H1>Оставить данные</H1>
-                                <form action="check.php" method="post">
-                                    <div class="forum-group">
-                                        <label for="name">Ваше имя:</label>
-                                        <input type="text" id="name" name="name" placeholder="Введите ваше имя">
-                                    </div>
-                                    <div class="forum-group">
-                                        <label for="Email">Ваш Email</label>
-                                        <input type="Email" id="Email" name="Email" placeholder="Введите Email">
-                                    </div>
-                                    <div class="forum-group">
-                                        <label for="Phone">Ваш номер телефона</label>
-                                        <input type="Phone" id="Email" name="Phone" placeholder="Введите номер телефона">
-                                    </div>
-                                    <input class="btn" type="submit" value="Отправить">
-                                </form>
-                            </div>
+                </div>
+                <!-- -----------------------------------Выбор------------------------------------------ -->
+                <!-- -----------------------------------Форум------------------------------------------ -->
+                <div class="forum">
+                    <H1>Оставить данные</H1>
+                    <form action="check.php" method="post">
+                        <div class="forum-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="forum-group">
+                            <label for="Email">Ваш Email</label>
+                            <input type="Email" id="Email" name="Email" placeholder="Введите Email">
+                        </div>
+                        <div class="forum-group">
+                            <label for="Phone">Ваш номер телефона</label>
+                            <input type="Phone" id="Email" name="Phone" placeholder="Введите номер телефона">
+                        </div>
+                        <input class="btn" type="submit" value="Отправить">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-             <!-- -----------------------------------Форум------------------------------------------ -->
+<!-------------------------------------Форум-------------------------------------------->
 
     <script src="js/main.js"></script>
 </body>

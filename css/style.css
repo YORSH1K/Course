@@ -560,6 +560,7 @@ body{
     background: radial-gradient(302.67% 517.91% at 92% 84.92%, rgba(0, 0, 0, 0.146) 0%, rgba(239, 239, 239, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
     flex-basis: 430px 799px;
     margin: 10px;
@@ -781,15 +782,16 @@ body{
 
 .card{
     overflow: auto;
-    width: 900px;
-    height: 700px;
+    width: 800px;
+    height: 600px;
     margin: 15px auto;
-    background-color: #ebe7e7;
+    /* background-color: #ebe7e7; */
     box-shadow: 0 5px 10px #454548;
     border-radius: 7px;
     padding: 10px;
-	background: #ccc;
+	/* background: #ccc; */
     position: relative;
+    background: url(/img/1626768056_16-kartinkin-com-p-fon-stilnii-minimalizm-krasivo-16.jpg);
 }
 .forum h1{
 	font-size: 32px;
@@ -801,7 +803,7 @@ body{
 	backdrop-filter: blur(12px);
 	overflow: auto;
     width: 650px;
-	height: 390px;
+	height: 350px;
     margin: 15px auto;
     box-shadow: 0 5px 10px #454548;
     border-radius: 7px;
@@ -820,42 +822,45 @@ body{
 }
 .btn{
 	color: rgb(255, 255, 255);
-	padding: 10px 20px;
+	padding: 5px 10px;
 	margin: 6px auto;
+    margin-top: 10px;
 	background: #000;
 	font-family: inherit;
 	cursor: pointer;
 	border: 10px;
 	border-radius: 5px;
-	box-shadow: #454548;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    line-height: 24px;
 }
 .btn:hover{
 	opacity: 1;
+    background: #d4d2d2;
+    color: #000;
+}
+.btn:active{
+    color: rgb(255, 255, 255);
+    background: #000;
 }
 
 
-.network-click{
-	background-position: center;
-}
-.img{
-	width: 80px;
-	display: flex;
-	background-position: center;
-}
-.network{
+
+
+/* .network{
 	background-color: #ffffff10;
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	display: block;
 	overflow: auto;
-    width: 400px;
-	height: 150px;
+    max-width: 500px;
+	max-height: 150px;
     margin: 15px auto;
     box-shadow: 0 5px 10px #454548;
     border-radius: 7px;
     padding: 10px;
 	text-align: center;
-}
+} */
 .network h1{
 	font-size: 32px;
 	font-family: inherit;
@@ -870,47 +875,56 @@ body{
 	text-align: center;
 	font-weight: 500;
 }
-.network-click {
-	display: flex;
-	justify-content: center;
+
+
+
+/* Select */
+.container{
+    margin: 10px 65px 10px 65px;
 }
-.network-click ul {
-	align-items: center;
-	display: flex;
+.container h1{
+    margin-bottom: 5px;
 }
-.network-click ul li {
-	margin: 20px;
+.select {
+    position: relative;
+    margin-bottom: 1rem;
 }
 
- /* div:first-of-type {
-	align-items: flex-start; 
-	margin-bottom: 5px;
-  }  */
-  
-  label {
-	margin-right: 15px;
-	line-height: 32px;
-  }
-  
-  #contactChoice1, #contactChoice2, #contactChoice3 {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-  
-	border-radius: 50%;
-	width: 16px;
-	height: 16px;
-  
-	border: 2px solid #999;
-	transition: 0.2s all linear;
-	outline: none;
-	margin-right: 5px;
-  
-	position: relative;
-	top: 4px;
-    margin-top: 20px;
-  }
-  
-  input:checked {
-	border: 6px solid black;
-  }
+.select:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    pointer-events: none;
+
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -3px;
+}
+
+.select select {
+    display: block;
+    width: 100%;
+    padding: .75rem 2.5rem .75rem 1rem;
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+
+    font-family: inherit;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.select select:focus {
+    outline: 0;
+    border-color: #ffffff;
+}
+
+
+ 
