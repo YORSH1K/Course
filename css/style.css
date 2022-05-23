@@ -564,7 +564,7 @@ body{
     border-radius: 15px;
     flex-basis: 430px 799px;
     margin: 10px;
-    width: 500px;
+    width: 450px;
     display: flex;
     position: relative;
 }
@@ -622,6 +622,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .info_card{
     max-width: 1364px;
     height: 770px;
@@ -631,7 +632,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 32px 38px 66px 255px; 
+    margin: 25px 38px 66px 38px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .info_project{
     font-style: normal;
@@ -796,6 +799,7 @@ body{
 .forum h1{
 	font-size: 32px;
 	text-align: center;
+    margin-bottom: 12px;
 }
 .forum{
 	background-color: #ffffff10;
